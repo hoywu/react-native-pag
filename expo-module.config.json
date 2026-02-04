@@ -1,0 +1,9 @@
+{
+  "platforms": ["apple", "android", "web"],
+  "apple": {
+    "modules": ["ReactNativePagModule"]
+  },
+  "android": {
+    "modules": ["expo.modules.pag.ReactNativePagModule"]
+  }
+}
