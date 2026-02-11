@@ -1,11 +1,9 @@
 import { requireNativeView } from 'expo';
 import * as React from 'react';
+import { PAGViewProps } from './types';
 
-import { ReactNativePagViewProps } from './ReactNativePag.types';
+const NativeView: React.ComponentType<PAGViewProps> = requireNativeView('ReactNativePag');
 
-const NativeView: React.ComponentType<ReactNativePagViewProps> =
-  requireNativeView('ReactNativePag');
-
-export default function ReactNativePagView(props: ReactNativePagViewProps) {
+export default function ReactNativePagView(props: PAGViewProps) {
   return <NativeView {...props} />;
 }
