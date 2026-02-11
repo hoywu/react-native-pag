@@ -28,7 +28,9 @@
   "author": "hoywu <wu_git@outlook.com> (https://github.com/hoywu)",
   "license": "MIT",
   "homepage": "https://github.com/hoywu/react-native-pag#readme",
-  "dependencies": {},
+  "dependencies": {
+    "libpag": "^4.5.16"
+  },
   "devDependencies": {
     "@types/react": "~19.1.0",
     "expo-module-scripts": "^5.0.8",
