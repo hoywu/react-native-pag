@@ -1,37 +1,26 @@
-import { useEvent } from 'expo';
-import ReactNativePag, { ReactNativePagView } from 'react-native-pag';
 import { Button, SafeAreaView, ScrollView, Text, View } from 'react-native';
 
 export default function App() {
-  const onChangePayload = useEvent(ReactNativePag, 'onChange');
-
   return (
     <SafeAreaView style={styles.container}>
       <ScrollView style={styles.container}>
         <Text style={styles.header}>Module API Example</Text>
         <Group name="Constants">
-          <Text>{ReactNativePag.PI}</Text>
+          <Text>TODO</Text>
         </Group>
         <Group name="Functions">
-          <Text>{ReactNativePag.hello()}</Text>
+          <Text>TODO</Text>
         </Group>
         <Group name="Async functions">
           <Button
             title="Set value"
             onPress={async () => {
-              await ReactNativePag.setValueAsync('Hello from JS!');
+              // TODO
             }}
           />
         </Group>
-        <Group name="Events">
-          <Text>{onChangePayload?.value}</Text>
-        </Group>
         <Group name="Views">
-          <ReactNativePagView
-            url="https://www.example.com"
-            onLoad={({ nativeEvent: { url } }) => console.log(`Loaded: ${url}`)}
-            style={styles.view}
-          />
+          <Text>TODO</Text>
         </Group>
       </ScrollView>
     </SafeAreaView>
