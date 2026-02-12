@@ -31,4 +31,6 @@ config.transformer.getTransformOptions = async () => ({
   },
 });
 
+config.resolver.assetExts.push('pag');
+
 module.exports = config;
