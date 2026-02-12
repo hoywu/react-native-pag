@@ -4,6 +4,9 @@
   "description": "High-performance PAG animation renderer for React Native",
   "main": "build/index.js",
   "types": "build/index.d.ts",
+  "bin": {
+    "setup-libpag-web": "scripts/setup-libpag-web.js"
+  },
   "scripts": {
     "build": "expo-module build",
     "clean": "expo-module clean",
